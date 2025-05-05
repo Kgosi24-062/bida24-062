@@ -11,7 +11,7 @@ body {
 header {
     background-color: #1e1e1e;
     color: white;
-    padding: 1em 0;
+    padding: 1em 20px;
     text-align: center;
 }
 
@@ -23,7 +23,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav a {
@@ -36,10 +36,10 @@ main {
 }
 
 footer {
-    background-color: #1e1e1e;
+    background-color: #1E1E1E;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 1em 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -53,10 +53,12 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 15px;
+    border: none;
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: #4cae4c;
+    background-color: #0b7dda;
 }
 
 /* Homepage Styles */
@@ -64,8 +66,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 40px 0;
+    padding: 40px 20px;
     background-color: #2c2c2c;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .hero-content {
@@ -81,7 +85,7 @@ footer {
 }
 
 .products {
-    padding: 30px 0;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -93,7 +97,8 @@ footer {
 }
 
 .product-card {
-    border: 1px solid #ddd;
+    background-color: #1E1E1E;
+    border: 1px solid #333;
     padding: 15px;
     border-radius: 5px;
     text-align: center;
@@ -119,21 +124,24 @@ footer {
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .add-to-cart:hover {
-    background-color: #0056b3;
+    background-color: #0b7dda;
 }
 
 .video-section {
     text-align: center;
-    padding: 30px 0;
-    background-color: #f8f9fa;
+    padding: 30px 20px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 /* About Us Styles */
 .about-us {
-    padding: 30px;
+    padding: 15px;
 }
 
 .about-media {
