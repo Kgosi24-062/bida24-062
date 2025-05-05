@@ -1,45 +1,68 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>My First GitHub Page</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBS Meg Wheels - Performance and Style</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>BBS Meg Wheels</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Unleash Your Car's Potential</h2>
+                <p>Explore our premium selection of BBS Meg wheels, engineered for performance and style.</p>
+                <a href="#products" class="button">View Our Wheels</a>
+            </div>
+            <img src="images/hero-wheel.jpg" alt="BBS Meg Wheel" class="hero-image">
+        </section>
 
-<h1>Welcome to My Website!</h1>
+        <section id="products" class="products">
+            <h2>Featured Wheels</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/wheel1.jpg" alt="BBS Meg Wheel Model 1">
+                    <h3>BBS Meg Sport</h3>
+                    <p class="price">$299.99 per wheel</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
 
-</header>
+                <div class="product-card">
+                    <img src="images/wheel2.jpg" alt="BBS Meg Wheel Model 2">
+                    <h3>BBS Meg Race</h3>
+                    <p class="price">$349.99 per wheel</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
 
+                </div>
+            <a href="#" class="button">See All Wheels</a>
+        </section>
 
-<main>
+        <section class="video-section">
+            <h2>Experience the BBS Difference</h2>
+            <video controls width="640" height="360">
+                <source src="videos/bbs-promo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
 
-<p>This is a simple webpage hosted on GitHub Pages.</p>
+    <footer>
+        <p>&copy; 2025 BBS Meg Wheels</p>
+    </footer>
 
-<p>Here's a picture of a cute cat:</p>
-<img src="https://placekitten.com/200/300" alt="A cute kitten">
-
-
-<p>Visit <a href="https://github.com">GitHub</a> to learn more about coding.</p>
-
-</main>
-
-
-<footer>
-
-<p>&copy; 2025 Your Name</p>
-
-</footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
+
