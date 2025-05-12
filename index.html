@@ -3,66 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBS Meg Wheels - Performance and Style</title>
+    <title>Your Awesome BBS Wheels Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>BBS Meg Wheels</h1>
+        <h1>Discover Our Premium BBS Wheels!</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="#video-blog">Video Blog</a></li>
+                <li><a href="#feedback">Feedback</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Unleash Your Car's Potential</h2>
-                <p>Explore our premium selection of BBS Meg wheels, engineered for performance and style.</p>
-                <a href="#products" class="button">View Our Wheels</a>
-            </div>
-            <img src="images/22622447846_71d5095aa4_o.jpg" alt="BBS Meg Wheel" class="hero-image">
+        <section id="hero">
+            <h2>Upgrade Your Ride with Authentic BBS Wheels</h2>
+            <p>Explore our exclusive collection of high-performance BBS "megs" designed for style and performance.</p>
+            <a href="#featured-products">Browse Our BBS Collection</a>
         </section>
 
-        <section id="products" class="products">
-            <h2>Featured Wheels</h2>
+        <section id="featured-products">
+            <h2>Featured BBS Wheels</h2>
             <div class="product-grid">
-                <div class="product-card">
-                    <img src="images/22622447846_71d5095aa4_o.jpg" alt="BBS Meg Wheel Model 1">
-                    <h3>BBS Meg Sport</h3>
-                    <p class="price">$299.99 per wheel</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                <div class="product-item">
+                    <h3>BBS Model 1</h3>
+                    <img src="bbs_wheel_1.jpg" alt="BBS Wheel Model 1">
+                    <p>A classic BBS design offering a perfect blend of aesthetics and performance.</p>
+                    <a href="#">View Details</a>
                 </div>
-
-                <div class="product-card">
-                    <img src="images/756feda52e9b8c3ce6654b6709eec6a3.jpg" alt="BBS Meg Wheel Model 2">
-                    <h3>BBS Meg Race</h3>
-                    <p class="price">$349.99 per wheel</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                <div class="product-item">
+                    <h3>BBS Model 2</h3>
+                    <img src="bbs_wheel_2.jpg" alt="BBS Wheel Model 2">
+                    <p>Experience sporty elegance with this iconic BBS wheel style.</p>
+                    <a href="#">View Details</a>
                 </div>
-
+                <div class="product-item">
+                    <h3>BBS Model 3</h3>
+                    <img src="bbs_wheel_3.jpg" alt="BBS Wheel Model 3">
+                    <p>Lightweight and strong, ideal for performance enthusiasts.</p>
+                    <a href="#">View Details</a>
                 </div>
-            <a href="#" class="button">See All Wheels</a>
+                </div>
         </section>
 
-        <section class="video-section">
-            <h2>Experience the BBS Difference</h2>
-            <video controls width="640" height="360">
-                <source src="videos/WhatsApp Video 2025-05-05 at 17.19.24_e468c283.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <section id="video-blog">
+            <h2>BBS Wheels Video Blog</h2>
+            <div class="video-container">
+                </div>
+        </section>
+
+        <section id="feedback">
+            <h2>Customer Feedback on BBS Wheels</h2>
+            <div id="feedback-messages">
+                </div>
+            <h3>Share Your Feedback on Our BBS Wheels</h3>
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="product">Product:</label>
+                <select id="product" name="product">
+                    <option value="BBS Model 1">BBS Model 1</option>
+                    <option value="BBS Model 2">BBS Model 2</option>
+                    <option value="BBS Model 3">BBS Model 3</option>
+                    <option value="Other">Other BBS Wheel</option>
+                </select><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">Submit Feedback</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 BBS Meg Wheels</p>
+        <p>© 2025 Your Awesome BBS Wheels Website</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
 
