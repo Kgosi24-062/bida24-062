@@ -3,57 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact BBS Meg Wheels</title>
+    <title>Contact Us - Your Awesome Product Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>BBS Meg Wheels</h1>
+        <h1>Get in Touch</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#video-blog">Video Blog</a></li>
+                <li><a href="index.html#feedback">Feedback</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="contact-us">
-            <h2>Get in Touch</h2>
-            <p>We'd love to hear from you! Please fill out the form below or reach out to us directly.</p>
-
-            <div class="contact-form">
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="button">Send Message</button>
-                </form>
-            </div>
-
-            <div class="contact-info">
-                <h3>Our Contact Details</h3>
-                <p><strong>Address:</strong> P O Box 10788 bbsmegwheels, Gaborone, Botswana</p>
-                <p><strong>Phone:</strong> +267 74338181</p>
-                <p><strong>Email:</strong> kgosisetwaba@gmail.com</p>
-            </div>
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="POST"> <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="7" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
+
+        <section id="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>Address: 123 Main Street, Gaborone, Botswana</p>
+            <p>Email: info@yourwebsite.com</p>
+            <p>Phone: +267 123 4567</p>
+            </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 BBS Meg Wheels</p>
+        <p>&copy; 2025 Your Awesome Product Website</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
