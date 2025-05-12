@@ -18,34 +18,57 @@ body {
 header {
     background-color: #337ab7; /* A nice blue color */
     color: white;
-    padding: 1em 20px; /* Add some horizontal padding */
-    display: flex; /* To align logo and navigation */
-    justify-content: space-between; /* Space out logo and navigation */
-    align-items: center; /* Vertically align logo and navigation */
+    padding: 1em 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Needed for absolute positioning of the menu */
 }
 
 .logo-container img {
-    height: 50px; /* Adjust the height as needed */
-    /* You can add more styling here, like margin-right if needed */
+    height: 50px;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 100%; /* Positioned below the header */
+    left: 0;
+    width: 100%;
+    background-color: #337ab7;
+    display: none; /* Initially hidden */
+}
+
+nav.show {
+    display: block; /* Shown when the menu icon is clicked */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex; /* To arrange navigation items horizontally */
+    margin: 0;
+    display: flex; /* Horizontal menu */
+    flex-direction: column; /* Stack items vertically */
 }
 
 nav ul li {
-    margin-left: 15px; /* Space out navigation items */
+    margin: 0; /* Remove default margins */
 }
 
-nav ul li:first-child {
-    margin-left: 0; /* Remove left margin for the first item */
-}
-
-nav a {
+nav ul li a {
+    display: block; /* Make the whole list item clickable */
     color: white;
     text-decoration: none;
+    padding: 1em; /* Add padding for better touch targets */
+    text-align: center; /* Center the text */
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 main {
@@ -62,7 +85,7 @@ section {
 
 #hero {
     position: relative;
-    height: 600px; /* Adjust as needed */
+    height: 600px;
     overflow: hidden;
     color: white;
     text-align: center;
@@ -78,7 +101,7 @@ section {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* Place behind other content */
+    z-index: -1;
 }
 
 .background-video video {
@@ -86,20 +109,19 @@ section {
     min-height: 100%;
     width: auto;
     height: auto;
-    /* Ensures the video covers the entire container */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover; /* Maintain aspect ratio and cover */
+    object-fit: cover;
 }
 
 .hero-content {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     max-width: 80%;
-    z-index: 1; /* Ensure text is on top of the video */
+    z-index: 1;
 }
 
 .hero-content h2 {
@@ -127,7 +149,7 @@ section {
 }
 
 #featured-products {
-    padding-top: 60px; /* Add some space below the hero */
+    padding-top: 60px;
 }
 
 .product-grid {
@@ -156,15 +178,15 @@ section {
 }
 
 .video-item {
-    flex: 1 0 300px; /* Minimum width of 300px */
+    flex: 1 0 300px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    overflow: hidden; /* To contain video within border-radius */
+    overflow: hidden;
 }
 
 .video-item iframe {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Standard video aspect ratio */
+    aspect-ratio: 16 / 9;
 }
 
 #feedback-messages {
@@ -189,11 +211,11 @@ section {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Important for padding and border to be inside the element's width */
+    box-sizing: border-box;
 }
 
 #feedback-form button[type="submit"] {
-    background-color: #007bff; /* Another vibrant blue for buttons */
+    background-color: #007bff;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -211,11 +233,7 @@ footer {
     padding: 1em 0;
     background-color: #333;
     color: white;
-    position: sticky; /* Or fixed, depending on your preference */
+    position: sticky;
     bottom: 0;
     width: 100%;
 }
-
-/* You can add more specific styles to make it more colorful and eye-catching! */
-/* For example, you could use different background colors for different sections, */
-/* add gradients, use more vibrant text colors, and customize the fonts. */
