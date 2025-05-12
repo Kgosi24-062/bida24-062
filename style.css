@@ -18,18 +18,29 @@ body {
 header {
     background-color: #337ab7; /* A nice blue color */
     color: white;
-    padding: 1em 0;
-    text-align: center;
+    padding: 1em 20px; /* Add some horizontal padding */
+    display: flex; /* To align logo and navigation */
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center; /* Vertically align logo and navigation */
+}
+
+.logo-container img {
+    height: 50px; /* Adjust the height as needed */
+    /* You can add more styling here, like margin-right if needed */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* To arrange navigation items horizontally */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 15px; /* Space out navigation items */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove left margin for the first item */
 }
 
 nav a {
@@ -208,5 +219,3 @@ footer {
 /* You can add more specific styles to make it more colorful and eye-catching! */
 /* For example, you could use different background colors for different sections, */
 /* add gradients, use more vibrant text colors, and customize the fonts. */
-
-
