@@ -87,7 +87,7 @@ section {
 
 #hero {
     position: relative;
-    height: 600px;
+    height: 100vh; /* Make the hero section the full height of the viewport */
     overflow: hidden;
     color: white;
     text-align: center;
@@ -97,7 +97,7 @@ section {
 }
 
 .background-video {
-    position: absolute;
+    position: fixed; /* Fixed position to cover the entire viewport */
     top: 0;
     left: 0;
     width: 100%;
@@ -115,7 +115,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover; /*Maintain aspect ratio and cover */
+    object-fit: cover; /* Maintain aspect ratio and cover */
 }
 
 .hero-content {
@@ -239,4 +239,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
