@@ -65,8 +65,9 @@ nav ul li a {
     display: block; /* Make the whole list item clickable */
     color: white;
     text-decoration: none;
-    padding: 1em; /* Add padding for better touch targets */
+    padding: 0.7em 1em; /* Reduced vertical padding */
     text-align: center; /* Center the text */
+    font-size: 1em; /* Slightly reduced font size */
 }
 
 nav ul li a:hover {
@@ -120,7 +121,6 @@ section {
 
 .hero-content {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     max-width: 80%;
     z-index: 1;
