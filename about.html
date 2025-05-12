@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Awesome BBS Wheels Website</title>
+    <title>About Us - Your Awesome BBS Wheels Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -12,7 +12,7 @@
         <div class="logo-container">
             <img src="your_logo.png" alt="Your Company Logo">
         </div>
-        <div class="menu-icon">
+         <div class="menu-icon">
             <i class="fas fa-bars"></i>
         </div>
         <nav class="hidden">
@@ -20,85 +20,30 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#video-blog">Video Blog</a></li>
-                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="index.html#video-blog">Video Blog</a></li>
+                <li><a href="index.html#feedback">Feedback</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="background-video">
-                <video autoplay loop muted playsinline>
-                    <source src="bbs_wheels_background.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="hero-content">
-                <h2>Experience the Excellence of BBS Wheels</h2>
-                <p>Explore our premium selection and elevate your vehicle's style and performance.</p>
-                <a href="#featured-products" class="button">View Our Collection</a>
-            </div>
-        </section>
+        <section id="about-content">
+            <h2>Our Story</h2>
+            <p>Here you can write about the history of your company, your mission, and your values. Tell your users what makes your business unique and why they should choose our BBS wheels.</p>
+            <p>Include details about your team, your sourcing process for authentic BBS wheels, or anything else that helps build trust and connection with your audience.</p>
 
-        <section id="featured-products">
-            <h2>Featured BBS Wheels</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <h3>BBS Model 1</h3>
-                    <img src="bbs_wheel_1.jpg" alt="BBS Wheel Model 1">
-                    <p>A classic BBS design offering a perfect blend of aesthetics and performance.</p>
-                    <a href="#">View Details</a>
-                </div>
-                <div class="product-item">
-                    <h3>BBS Model 2</h3>
-                    <img src="bbs_wheel_2.jpg" alt="BBS Wheel Model 2">
-                    <p>Experience sporty elegance with this iconic BBS wheel style.</p>
-                    <a href="#">View Details</a>
-                </div>
-                <div class="product-item">
-                    <h3>BBS Model 3</h3>
-                    <img src="bbs_wheel_3.jpg" alt="BBS Wheel Model 3">
-                    <p>Lightweight and strong, ideal for performance enthusiasts.</p>
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="video-blog">
-            <h2>BBS Wheels Video Blog</h2>
-            <div class="video-container">
-                </div>
-        </section>
-
-        <section id="feedback">
-            <h2>Customer Feedback on BBS Wheels</h2>
-            <div id="feedback-messages">
-                </div>
-            <h3>Share Your Feedback on Our BBS Wheels</h3>
-            <form id="feedback-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="product">Product:</label>
-                <select id="product" name="product">
-                    <option value="BBS Model 1">BBS Model 1</option>
-                    <option value="BBS Model 2">BBS Model 2</option>
-                    <option value="BBS Model 3">BBS Model 3</option>
-                    <option value="Other">Other BBS Wheel</option>
-                </select><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br><br>
-                <button type="submit">Submit Feedback</button>
-            </form>
+            <h2>Our Values</h2>
+            <ul>
+                <li>Authenticity</li>
+                <li>Performance</li>
+                <li>Customer Satisfaction</li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <p>© 2025 Your Awesome BBS Wheels Website</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
