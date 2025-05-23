@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Video Blog Functionality ---
     const videoContainer = document.querySelector('.video-container');
     const videos = [
-        { title: 'BBS Wheel Demo 1', url: 'https://youtu.be/hFeOLGNVod0?si=9Tsrb1T8YNeIiHHp' }, // Replace with your achttps://youtu.be/hFeOLGNVod0?si=9Tsrb1T8YNeIiHHptual YouTube video IDshttps://youtu.be/maUgJPavRzg
+        { title: 'BBS Wheel Demo 1', url: 'https://youtu.be/maUgJPavRzg' }, // Replace with your actual YouTube video IDshttps://youtu.be/maUgJPavRzg
         { title: 'BBS Wheel Feature Showcase', url: 'https://www.youtube.com/embed/your_video_id_2' },
         { title: 'Customer Review: BBS Wheels', url: '' https://youtu.be/maUgJPavRzg},
         // Add more video objects as needed
