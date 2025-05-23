@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const videos = [
         { title: 'BBS Wheel Demo 1', url: 'https://youtu.be/maUgJPavRzg' }, // Replace with your actual YouTube video IDshttps://youtu.be/maUgJPavRzg
         { title: 'BBS Wheel Feature Showcase', url: 'https://www.youtube.com/embed/your_video_id_2' },
-        { title: 'Customer Review: BBS Wheels', url: 'https://www.youtube.com/embed/your_video_id_3' },
+        { title: 'Customer Review: BBS Wheels', url: '' https://youtu.be/maUgJPavRzg},
         // Add more video objects as needed
     ];
 
